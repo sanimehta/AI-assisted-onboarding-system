@@ -1,0 +1,2 @@
+<project name='{{PROJECT_NAME}}' chain='{{CHAIN}}'
+ftp_owner='{{FTP_OWNER}}'/>

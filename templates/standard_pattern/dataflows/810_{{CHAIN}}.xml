@@ -1,0 +1,2 @@
+<dataflow doc='810' chain='{{CHAIN}}' output='{{CHAIN}}_810.
+{{FORMAT_EXT}}' endpoint='ftp_{{CHAIN}}'/>
