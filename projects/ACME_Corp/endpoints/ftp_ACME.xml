@@ -1,0 +1,3 @@
+<endpoint type='ftp'
+name='ftp_ACME' chain='ACME' host_owner='customer'
+folder='/out/ACME'/>

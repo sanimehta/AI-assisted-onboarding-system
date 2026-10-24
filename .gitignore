@@ -1,4 +1,5 @@
 .venv/
 chroma_db/
-projects/
+.env
+onboarding_agent/.adk/
 __pycache__/
