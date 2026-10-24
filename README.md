@@ -54,6 +54,7 @@ python -m scripts.build_library     # indexes the glossary and past requests in 
 python -m scripts.eval_extraction rag        # scores extraction on all 18 emails
 python -m scripts.eval_extraction rag new    # scores only the 6 held-out emails
 python -m scripts.onboard_cli data/sample_email.txt   # full flow with a human approval step
+python -m tests.test_mcp_tools      # checks the MCP tools, including that preview saves nothing
 ```
 
 Run all commands from the project root. To use the MCP server, run `npx @modelcontextprotocol/inspector python mcp_server.py` (requires Node.js).
