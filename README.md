@@ -71,6 +71,7 @@ python -m scripts.eval_extraction rag        # scores extraction on all 18 email
 python -m scripts.eval_extraction rag new    # scores only the 6 held-out emails
 python -m scripts.onboard_cli data/sample_email.txt   # full flow with a human approval step
 python -m tests.test_mcp_tools      # checks the MCP tools, including that preview saves nothing
+```
 
 Agent version (needs a free key from [Google AI Studio](https://aistudio.google.com)):
 
@@ -81,7 +82,6 @@ adk run onboarding_agent                 # chat with the agent
 python -m scripts.eval_agent new         # score it on the 6 held-out emails
 python -m scripts.eval_agent             # score it on all 18
 ```
-
 
 Run all commands from the project root. To use the MCP server, run `npx @modelcontextprotocol/inspector python mcp_server.py` (requires Node.js).
 
@@ -147,6 +147,6 @@ The emails include deliberate traps: a document that was requested and then canc
 
 ## Next steps
 
-- Rebuild the extraction step as an agent with a framework such as Google's ADK or LangGraph, and compare it with this fixed pipeline on the same emails
 - Add a second template pattern and have the system choose between templates
-- Port the model calls to a hosted cloud model
+- Run the agent on Google Cloud (Vertex AI) instead of an AI Studio key, and trace tool calls and token usage
+- Repeat the agent evaluation with a fixed temperature and several runs per email, since the current numbers come from a single run
